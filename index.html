@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Intune! sign up</title>
+
+</head>
+<body>
+    <div class="container flex-direction">
+
+        <!--header/left side div -->
+        <div class="sidebar-container">
+            <header>
+                <h1>
+                    INTUNE!
+                </h1>
+            </header>
+            <footer>
+                <p>
+                    The background image is a Photo created by
+                    <a href="https://unsplash.com/@dylu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Jacek Dylag</a> on 
+                    <a href="https://unsplash.com/s/photos/guitars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+                </p>
+            </footer>
+        </div>
+
+        <!-- main content/form -->
+        <div class="main-form-container">
+            <main>
+                <header class="form-header">
+                    <h1>
+                        Welcome to InTune a famous guitar company created just now. we offer high quailty guitars of any kind. We also provide one on one in-person guitar lessons.
+                        Please sign up to our website and get in tuned!
+                    </h1>
+
+                    <p>Let's get started! Let's get Intune!</p>
+                </header>
+                <form class="sign-up-form" novalidate action="/" method="get">
+                    <fieldset class="fieldset1">
+                        <label for="first-name">First Name</label>
+                        <br>
+                        <input type="text" name="first-name" id="first-name" pattern="[A-Za-z]+" required>
+                        <span class="error-message">*Please enter you first name no numbers or symbols.</span>
+                        <br>
+                        <label for="last-name">Last Name</label>
+                        <br>
+                        <input type="text" name="last-name" id="last-name" pattern="[A-Za-z]+" required>
+                        <span class="error-message">*Please enter you last name no numbers or symbols.</span>
+                        <br>
+                        <label for="phone">Phone</label>
+                        <br>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]+" required>
+                        <span class="error-message">*Please enter you phone number.</span>
+                        <br>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" name="email" id="email" required>
+                        <span class="error-message">*Please enter a valid email address.</span>
+                        <br>
+                        <label for="password">Password</label>
+                        <br>
+                        <input type="password" name="password" class="password" id="password" required>
+                        <span class="error-message">*Please enter a password.</span>
+                        <br>
+                        <label for="confirm-password">Confirm Password</label>
+                        <br>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                        <span class="error-message">*please enter your password again.</span>
+                    </fieldset>
+
+                    <fieldset class="fieldset2">
+                        <h2>Would you like</h2>
+                            <input type="checkbox" id="recommendations" name="opitions" value="recommendations">
+                            <label for="recommendations">guitar recommendations?</label>
+                            <br>
+                            <input type="checkbox" id="lessons" name="opitions" value="lessons">
+                            <label for="lessons">guitar lessons?</label>
+                    </fieldset>
+
+                    <section class="create-account-btn-container">
+                        <button class="create-account-btn" type="submit">
+                                <p>Create Account</p>
+                        </button>
+                        <p>Already have an account? <a href="somewhere">Log in</a></p>
+                    </section>
+
+                </form>
+            </main>
+        </div>
+    </div>
+    <!-- js code -->
+    <script src="form-validation.js"></script>
+</body>
+</html>
